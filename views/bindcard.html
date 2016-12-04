@@ -1,0 +1,64 @@
+<div class="bindcardviews">
+    <div class="firstrow">
+        <span>我的钱包</span><span>></span><span>我的银行卡</span>
+    </div>
+    <div class="waylist">
+    </div>
+    <div class="cont">
+        <ng-form action="" name="bindcardform">
+            <table align="center">
+                <tr>
+                    <td style="text-align: right">真实姓名：</td>
+                    <td><span>刘浩</span></td>
+                </tr>
+                <tr>
+                    <td>身份证号码：</td>
+                    <td>{{identity | hidee}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">银行卡号：</td>
+                    <td><input type="text" name="num" id="num" ng-model="user.num"
+                               style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"
+                               placeholder="请输入银行卡号" required/></td>
+                    <td style="height: 42px;width: 130px"><span style="color: red" class="alert alert-danger"
+                                                                ng-show="bindcardform.num.$error.required">请输入卡号!</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">开户银行：</td>
+                    <td>
+                        <select name="" id="" style="width: 326px;height: 32px;">
+                            <option value="0">自动选择</option>
+                            <option value="1">ICBC</option>
+                            <option value="2">ABC</option>
+                            <option value="3">CCB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">手机号码：</td>
+                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm"
+                               style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">地址：</td>
+                    <td style="width: 326px;text-align: center">
+                        <select name="" class="link1">
+                            <option value="0">请选择省份：</option>
+                        </select>
+                        <select name="" class="link2">
+                            <option value="0">请选择城市：</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="width: 326px;height: 30px;text-align: center;">
+                        <a href="" style="height: 30px;line-height: 30px;background: #FF4431;color: #fff;border: none;width: 100px;display: inline-block;margin-top: 30px;">下一步</a>
+                    </td>
+                </tr>
+            </table>
+        </ng-form>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="rechargeviews">
+    <div class="firstrow">
+        <span>我的钱包</span><span>></span><span>充值</span>
+    </div>
+    <div class="cont">
+        <ng-form action="" name="rechargeform">
+            <table align="center">
+                <tr>
+                    <td style="text-align: right">选择支付方式:</td>
+                    <td style="width: 326px;height: 80px;margin-top: 40px;background: url(images/bao.png) no-repeat 25px 15px;">
+                        <input type="radio" name="way" id="jd" ng-model="user.way"/><label for="jd"
+                                                                                           style="padding-left: 60px">京东钱包支付</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="width: 326px;height: 80px;background: url(images/icbc.png) no-repeat 25px 15px;"><input
+                            type="radio" name="way" id="icbc"/><label for="icbc"
+                                                                      style="padding-left: 60px">中国建设银行</label></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">充值金额:</td>
+                    <td><input type="text" name="num" id="num" ng-model="user.num"
+                               style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"
+                               ng-value="{{num}}" required/></td>
+                    <td class="alert" ng-show="rechargeform.num.$error.required" style="height: 42px;width: 130px"><span
+                            style="color: red">请输入金额!</span></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">手机号码:</td>
+                    <td><input type="text" id="phone" name="phone" ng-model="user.phone"
+                               style="width: 326px;height: 30px;"/></td>
+                    <td style="width: 130px;text-align: center"><a href='javascript:;'
+                                                                   style="color: #fff;background: #00B7EE;display: block;height: 36px;line-height: 36px;border-radius: 3px;">获取验证码</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">验证码:</td>
+                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm"
+                               style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="width: 326px;text-align: center"><button id="charge" style="background: red;color: #fff;border: none;border-radius: 3px;height: 34px;">确认支付</button>
+                    </td>
+                </tr>
+            </table>
+        </ng-form>
+    </div>
+</div>
