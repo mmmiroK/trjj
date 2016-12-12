@@ -1,0 +1,40 @@
+<div class="cont-wrap clearfix">
+        <div class="left">
+                <div class="txt">
+                        <a href="#login">
+                                <p>Hi,{{uname}}</p>
+                                <p>欢迎进入天荣钱包！</p>
+                        </a>
+                </div>
+        </div>
+        <div class="mid">
+                <div class="txt">
+                        <p>我的总资产</p>
+                        <p class="red">{{all | currency:"￥"}}</p>
+                </div>
+        </div>
+        <div class="right">
+                <div class="txt">
+                        <p>可用余额：<span class="red">{{ready |currency:"￥"}}</span></p>
+                        <p >提现中：<span class="red">{{real| currency:"￥"}}</span></p>
+                </div>
+        </div>
+        <rechargeview></rechargeview>
+        <realmoney></realmoney>
+        <mycard></mycard>
+        <div class="tradeTrace">
+                <div class="allTogethor">
+                        <span>近期交易记录</span>
+                        <a href="http://localhost:63342/trjj/indexx.html?_ijt=j5dktetv41u934frj4hr31rh5q#/cs">查看更多</a>
+                </div>
+                <ul>
+                        <li class="fst">
+                                <span>交易时间</span>
+                                <span>名称</span>
+                                <span>订单号</span>
+                                <span>交易金额</span>
+                                <span>状态</span>
+                        </li>
+                </ul>
+        </div>
+</div>

@@ -1,0 +1,30 @@
+app.config(['$routeProvider','routeService',function(rp,rs){
+
+    rp.when(rs.myPurse,{
+        templateUrl:'views/myPurse.html',
+        controller:'pCtrl'
+    }).when(rs.consoleJ,{
+        templateUrl:'views/console.html',
+        controller:'cCtrl'
+    }).when(rs.safe,{
+        templateUrl:'views/safe.html',
+        controller:'sCtrl'
+    }).otherwise({
+        redirectTo:rs.myPurse
+    }).when(rs.recharge,{
+        templateUrl:'views/recharges.html',
+        controller:'rCtrl'
+    }).when(rs.real,{
+        templateUrl:'views/realview.html',
+        controller:'realCtrl'
+    }).when(rs.card,{
+        templateUrl:'views/bindcard.html',
+        controller:'myCtrl'
+    }).when(rs.login,{
+        templateUrl:'views/login.html',
+        controller:'lCtrl'
+    }).when(rs.resuc,{
+        templateUrl:'views/rechargesuc.html',
+        controller:'resucCtrl'
+    })
+}]);

@@ -1,0 +1,43 @@
+<div class="real">
+    <div class="top">
+        <p><span>我的钱包</span><span>></span><span>提现</span></p>
+    </div>
+    <div class="cont">
+        <form action="" name="realform">
+            <table>
+                <tr>
+                    <td style="text-align: right">余额：</td>
+                    <td class="red">{{all|currency:'￥'}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">银行卡：</td>
+                    <td><img src="images/card.png" alt=""  data-list="{{incountNum}}" id="incountNum"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">提现金额：</td>
+                    <td><input type="text" name="real.num" id="realnum"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">手续费：</td>
+                    <td><input type="text" value="{{fee}}" id="tipFee"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-bottom: 0;">实际到账：</td>
+                    <td style="padding-bottom: 0px"><input type="text" name="real.arrived" id="realarrived"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="padding-top: 0px;padding-bottom: 10px;font-size: 12px;"><a href="" style="color: #0000fa">提现费率介绍</a></td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 5px" style="text-align: right">交易密码：</td>
+                    <td style="padding-top: 5px"><input type="password" name="real.password" id="realpassword"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="javascript:;"  style="color: #fff;background: #FF4431;border: none" id="txtx">提交</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
