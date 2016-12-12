@@ -1,0 +1,479 @@
+/*html,body{ overflow-y:scroll;}*/
+body{ overflow:scroll; min-height:101%;}
+/*html{ overflow:-moz-scrollbars-vertical;}*/
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(255,255,255);
+    border-bottom: 1px solid rgb(229,229,229);
+}
+.logo{
+    width: 1006px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.logoicon{
+    line-height: 80px;
+    width: 700px;
+    height: 80px;
+    float: left;
+}
+.logoicon img{
+    vertical-align: middle;
+}
+.nav{
+    line-height: 80px;
+}
+.navStyle{
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(43, 43, 43);
+    margin-left: 30px;
+}
+.navColor{
+    margin-left: 30px;
+    color: rgb(255,68,49);
+    position: relative;
+}
+.navColor:before{
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    width: 88px;
+    left: -12px;
+    background: rgb(255,68,49);
+}
+.wrap{
+    width: 1006px;
+    margin: 0 auto;
+}
+.indexProperty{
+    margin: 14px 0;
+}
+.indexPropertyLeft{
+    width: 411px;
+    margin-right: 14px;
+}
+.indexPropertyRight{
+    width: 268px;
+}
+.indexPropertyLeft,.indexPropertyRight{
+    float: left;
+    height: 170px;
+    background: rgb(255,255,255);
+}
+.indexPropertyLeftTx,.indexPropertyLeftText,.g1{
+    padding: 45px 0 0 26px;
+}
+.indexPropertyLeftTx,.indexPropertyLeftText{
+    float: left;
+}
+img{
+    vertical-align: top;
+}
+.indexPropertyLeftText p{
+    line-height: 50px;
+}
+.indexPropertyLeftText p a{
+    color: rgb(48, 201, 232) ;
+    margin-left: 10px;
+}
+.indexProperty .indexPropertyRight{
+ border-right: 1px solid rgb(236, 235, 235);;
+}
+.indexPropertyRight {
+    padding-top:21px;
+    box-sizing: border-box;
+}
+
+.indexProperty .indexPropertyRight li{
+    line-height: 60px;
+    margin-left: 50px;
+}
+.indexProperty .indexPropertyRight li p{
+    display: inline-block;
+}
+.indexProperty .indexPropertyRight li span{
+    color: rgb(255, 68, 49);
+    font-size: 24px;
+}
+.indexBottom {
+    background: rgb(255, 255, 255);
+}
+
+.indexBottomTop {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    background:#f8f8f8;
+    border-bottom: 1px solid rgb(236, 235, 235);
+}
+
+.indexBottomTop p {
+    display: inline-block;
+    width: 900px;
+}
+
+.indexBottomTop a {
+    text-decoration: none;
+    color: rgb(48, 201, 232);
+}
+
+.listTitle, .list {
+    border-bottom: 1px solid rgb(236, 235, 235);
+    /*padding-left: 20px;*/
+}
+
+.listTitle ul, .list ul {
+    height: 46px;
+    line-height: 46px;
+}
+
+.listTitle ul li, .list ul li {
+   float: left;
+}
+
+.noRecord {
+    /*padding-top: 20px;*/
+    /*padding-left: 20px;*/
+}
+
+.noRecord p {
+    width: 112px;
+    height: 200px;
+    padding-top: 170px;
+    text-align: center;
+    color: rgb(182, 182, 182);
+    background: url("../images/web/jyjlw.png") no-repeat;
+}
+
+.eye {
+    float: left;
+    width: 45px;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 130px;
+    background: rgb(255, 255, 255);
+}
+
+.eye a {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background: url("../images/web/eye.png") no-repeat;
+}
+
+.indexProperty .noBorder {
+    border-right: 0px !important;
+}
+
+.gxarea{
+    margin: 15px auto;
+    width: 100%;
+    height: 170px;
+    box-sizing: border-box;
+}
+.gxarea .pay{
+    display: block;
+    width: 326px;
+    background-color: #fff;
+    float: left;
+    height: 170px;
+}
+.g1{
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.g1 .chongzhi{
+    font-size: 24px;
+
+}
+.g1 .bank{
+   width: 155px;
+    margin-top: 20px;
+}
+.space{
+    margin:0 14px;
+}
+.time{
+    width: 170px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.name{
+    width: 240px;
+   padding-left: 53px;
+    box-sizing: border-box;
+}
+.orderNum{
+    width: 340px;
+    padding-left: 123px;
+    box-sizing: border-box;
+}
+
+.moneyNum{
+width: 170px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+.status{
+    width: 85px;
+    padding-left: 34px;
+    box-sizing: border-box;
+}
+
+
+.dirdiv{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #666;
+}
+.dirdiv p{
+    color: #999;
+}
+/*
+安全中心结束
+*/
+
+
+
+/*
+安全中心开始
+*/
+.safety_top{
+    width: 1006px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.safety_top .center{
+    color: red;
+}
+.safety_cont{
+    width: 100%;
+    height: 515px;
+}
+.myform{
+    padding: 62px 0 0 192px;
+    font-size: 16px;
+}
+
+.safety_cont .sc{
+    height: 62px;
+    line-height: 62px;
+}
+.safety_cont .sc label{
+    /*display: block;*/
+    width: 148px;
+    height: 62px;
+    line-height: 62px;
+    text-align: right;
+    float: left;
+}
+.safety_cont .sc input{
+    height: 35px;
+    line-height: 35px;
+    width: 320px;
+    outline: none;
+    border: 1px solid #d2d2d2;
+}
+.alert{
+    color: red;
+    font-size: 14px;
+    padding-left: 18px;
+}
+.safety_cont .sc input.yanzheng{
+    border: 1px solid transparent;
+    outline: none;
+}
+.check{
+    background-color: #00b7ee;
+    width: 113px;
+    height: 33px;
+    line-height: 33px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+.safety_btn{
+    border: none;
+    /*outline: none;*/
+    height: 35px;
+    line-height: 35px;
+    width: 135px;
+    background-color:#ff4431;
+    text-align: center;
+    color: white;
+    margin: 55px 0 0 245px;
+    cursor: pointer;
+}
+/*
+安全中心结束
+*/
+
+/*
+交易查询开始
+*/
+
+.container .safety_top .selectmid{
+    color: #2b2b2b;
+}
+.select_contin{
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+.select_contin span{
+    display: block;
+    float: left;
+    font-size: 16px;
+}
+.select_contin input{
+    width:220px ;
+    height: 26px;
+    line-height: 26px;
+    outline: none;
+}
+.select_order{
+    width: 316px;
+}
+.select_order span{
+   margin-right: 10px;
+}
+.select_name span {
+    margin-right: 10px;
+}
+.select_status span{
+    margin: 0 10px 0 40px ;
+}
+.select_status select{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+}
+.select_select{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e33235;
+    text-align: center;
+    margin:25px 0 0 50px;
+    color: white;
+}
+.select_bo{
+    margin-top: 40px;
+}
+/*
+交易查询结束
+*/
+
+/*
+充值页面开始
+*/
+.payindex{
+    height: 760px;
+}
+.payindex_head{
+    width: 1006px;
+    height: 40px;
+    background-color: #f4f4f4;
+    line-height: 40px;
+    font-size: 18px;
+}
+.payindex_a{
+    color: #ff4431;
+}
+.payindex_a i{
+    color: #666666;
+}
+.payindex_one{
+    line-height: 80px;
+    width: 320px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.payindex_one img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding:0 25px ;
+}
+.payindex_one input{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.payindex_cs p,.payindex_cs .payindex_gt{
+    float: left;
+}
+.payindex_sc{
+    line-height: 60px;
+}
+.payindex_sc input{
+    outline: none;
+    width: 325px;
+    height: 35px;
+
+}
+input{
+    border: 1px solid #d2d2d2;
+}
+.payindex_sc label{
+    text-align: right;
+    float: left;
+  width: 112px;
+    line-height: 60px;
+}
+.payindex_sc .yanzheng{
+    border: none;
+    width: 200px;
+}
+.payindex_sc .payindex_alert{
+    margin-left: 20px;
+    display: none;
+}
+.payindex_sc .payindex_alert img{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.payindex_sc .payindex_alert span{
+    color: #dc0505;
+    margin-left: 5px;
+}
+::-webkit-input-placeholder {
+    color: #979797;
+}
+::-moz-placeholder { color:#979797; } /* firefox 19+ */
+:-ms-input-placeholder { color:#979797; } /* ie */
+input:-moz-placeholder { color:#979797; }
+.myform_bottom{
+    margin: 65px 0 0 200px;
+}
+.payindex_check{
+    background-color: #ff4431;
+    width: 135px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+

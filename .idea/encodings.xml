@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/js/angular-animate.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/angular-route.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/angular.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/MainController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/purseController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/safetyController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/selectController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/jquery-2.2.3.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/service/service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/style/initialize.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/style/mycss.css" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

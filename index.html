@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="MainCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的钱包</title>
+    <link rel="stylesheet" href="style/initialize.css"/>
+    <link rel="stylesheet" href="style/mycss.css"/>
+    <script src="js/jquery-2.2.3.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service/service.js"></script>
+    <script src="js/service/loading.js"></script>
+    <script src="js/controller/MainController.js"></script>
+    <script src="js/controller/purseController.js"></script>
+    <script src="js/controller/safetyController.js"></script>
+    <script src="js/controller/selectController.js"></script>
+    <script src="js/controller/payController.js"></script>
+    <script src="js/dirctive/directive.js"></script>
+    <script src="js/dirctive/loadingDir.js"></script>
+</head>
+<body>
+   <div class="container">
+        <div class="logo clearFix">
+            <div class="logoicon">
+                <img src="images/web/tiaorong_logo.png" alt=""/>
+            </div>
+            <div class="nav">
+                <a href="#purse" class="navStyle navColor" >{{purse}}</a>
+                <a href="#safety" class="navStyle" >{{safety}}</a>
+                <a href="#select" class="navStyle" >{{select}}</a>
+            </div>
+        </div>
+   </div>
+<div class="wrap">
+    <div ng-view></div>
+
+    <!--<loading></loading>-->
+</div>
+</body>
+</html>
