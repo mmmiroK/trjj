@@ -1,3 +1,3 @@
 app.controller('MainCtrl',['$scope',function(scope){
-    scope.title="Juresalem";
+    scope.title="天融基金";
 }]);
