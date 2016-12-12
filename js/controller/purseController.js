@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
 myApp.controller("purse", function ($scope,info,moneydata) {
     $(".navStyle").eq(0).addClass("navColor").siblings().removeClass("navColor");
     var isShowMoney=true;
@@ -45,12 +42,12 @@ myApp.controller("purse", function ($scope,info,moneydata) {
 
     $scope.table=[
         {
-            name:"yuan",
+            name:"miroK",
             age:25,
             hobby:["音乐","泡妞","自驾游"]
         },
         {
-            name:"chao",
+            name:"miro",
             age:120,
             hobby:["篮球","羽毛球","乒乓球"]
         }

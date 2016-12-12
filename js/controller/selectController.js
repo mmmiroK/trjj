@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
 myApp.controller("select", function ($scope, info) {
     $(".navStyle").eq(2).addClass("navColor").siblings().removeClass("navColor");
     info.datainfo("http://iwen.wiki/zhichenshop/purseData.php")

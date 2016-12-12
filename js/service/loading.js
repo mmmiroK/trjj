@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016-08-22.
- */
 myApp.config(function($httpProvider) {
     $httpProvider.interceptors.push('loadingInterceptor');
 });

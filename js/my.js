@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/27.
- */
 var repassword=document.getElementById("repassword");
 var repasswordtips=document.getElementById("repasswordtips");
 var passreg=/^[a-zA-Z]\w{5,17}$/;

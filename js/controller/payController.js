@@ -1,19 +1,11 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
-
-
 /*
 * 注入moneydata
 * */
 myApp.controller("payindex", function ($scope,moneydata,$interval,$log) {
     console.log(moneydata.moneyarr);
-
     /*
     * 获取值
     * */
-    $scope.paymymo=moneydata.moneyarr[0];
-
     $scope.paracont = "获取验证码";
     $scope.paraclass = "but_null";
     $scope.paraevent = true;

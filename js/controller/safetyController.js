@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
 myApp.controller("safety", function ($scope,$interval) {
     $(".navStyle").eq(1).addClass("navColor").siblings().removeClass("navColor");
     $scope.paracont = "获取验证码";

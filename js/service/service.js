@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
 myApp.factory("info", function ($http) {
     //bac=function(url){
     //    return $http({

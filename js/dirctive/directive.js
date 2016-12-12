@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2016/7/21.
- */
 myApp.directive("more",function(){
     return{
         restrict:"AEC",
@@ -10,9 +7,6 @@ myApp.directive("more",function(){
             console.log(scope);
             console.log(ele);
             console.log(attr);
-            //ele.bind("click", function (e) {
-            //    alert("哈哈逗你的");
-            //})
         }
     }
 });

@@ -1,7 +1,3 @@
-/**
- * Created by Administrator on 2016/7/20.
- */
-
 var myApp=angular.module("myApp",["ngRoute"]);
 myApp.constant("Routes",{
     purse:"/purse",
