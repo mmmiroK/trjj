@@ -7,34 +7,33 @@
             <table align="center">
                 <tr>
                     <td style="text-align: right">选择支付方式:</td>
-                    <td style="width: 326px;height: 80px;margin-top: 40px;background: url(images/bao.png) no-repeat 25px 15px;">
-                        <input type="radio" name="way" id="jd" ng-model="user.way"/><label for="jd" style="padding-left: 60px">京东钱包支付</label>
+                    <td  class="td1">
+                        <input type="radio" name="way" id="jd" ng-model="user.way"/><label for="jd" class="pl60">京东钱包支付</label>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="width: 326px;height: 80px;background: url(images/icbc.png) no-repeat 25px 15px;"><input
-                            type="radio" name="way" id="icbc"/><label for="icbc" style="padding-left: 60px">中国建设银行</label></td>
+                    <td  class="td2"><input  type="radio" name="way" id="icbc"/><label for="icbc" class="pl60">中国建设银行</label></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">充值金额:</td>
-                    <td><input type="text" name="num" id="num" ng-model="user.num" style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;" ng-value="{{num}}" pattern="^[1-9]\d{0,7}$" required/></td>
-                    <td class="alert" ng-show="rechargeform.num.$error.pattern" style="height: 42px;width: 130px"><span style="color: red">请输入正确的金额!</span></td>
-                    <td class="alert" ng-show="rechargeform.num.$error.required" style="height: 42px;width: 130px"><span style="color: red">请输入金额!</span></td>
+                    <td class="tright">充值金额:</td>
+                    <td><input type="text" name="num" id="num" ng-model="user.num" class="num2" ng-value="{{num}}" pattern="^[1-9]\d{0,7}$" required/></td>
+                    <td class="alert h42w130" ng-show="rechargeform.num.$error.pattern"><span class="red">请输入正确的金额!</span></td>
+                    <td class="alert h42w130" ng-show="rechargeform.num.$error.required "><span class="red">请输入金额!</span></td>
                 </tr>
                 <tr>
                     <td style="text-align: right">手机号码:</td>
-                    <td><input type="text" id="phone" name="phone" ng-model="user.phone" style="width: 326px;height: 30px;"/></td>
-                    <td style="width: 130px;text-align: center"><a href='javascript:;' style="color: #fff;background: #00B7EE;display: block;height: 36px;line-height: 36px;border-radius: 3px;">获取验证码</a>
+                    <td><input type="text" id="phone" name="phone" ng-model="user.phone" class="w326 h30"/></td>
+                    <td class="tcenter w130"><a href='javascript:;' class="getyzm">获取验证码</a>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">验证码:</td>
-                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm" style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"/></td>
+                    <td class="tright">验证码:</td>
+                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm" class="ryzm"/></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="width: 326px;text-align: center"><button id="charge" style="background: red;color: #fff;border: none;border-radius: 3px;height: 34px;">确认支付</button>
+                    <td class="w326 tcenter"><button id="charge">确认支付</button>
                     </td>
                 </tr>
             </table>

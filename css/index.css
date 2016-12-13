@@ -191,18 +191,19 @@ body {
     background: #fff;
 }
 
-.real .cont form {
+.real .cont .form {
+    display: block;
     margin: 0 auto;
     padding-left: 242px;
     padding-top: 20px;
 }
 
-.real .cont form table tr td {
+.real .cont .form table tr td {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.real .cont form input {
+.real .cont .form input {
     width: 320px;
     height: 34px;
 }
@@ -219,6 +220,122 @@ body {
     height: 120px;
     background: #fff;
     border-bottom: 1px solid #f4f4f4;
+}
+.tright{
+    text-align: right
+}
+.bselect{
+    width: 326px;height: 32px;
+}
+.tcenter{
+    text-align: center;
+}
+.w326{
+    width: 326px;
+}
+.h30{
+    height:30px;
+}
+.next-way{
+    height: 30px;
+    line-height: 30px;
+    background: #FF4431;
+    color: #fff;
+    border: none;
+    width: 100px;
+    display: inline-block;
+    margin-top: 30px;
+}
+#yzm{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#num{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ngshow{
+    height: 42px;
+    width: 130px;
+}
+.rechargeviews table .td1{
+    width: 326px;
+    height: 80px;
+    margin-top: 40px;
+    background: url(../images/bao.png) no-repeat 25px 15px;
+}
+.rechargeviews table .td2{
+    width: 326px;
+    height: 80px;
+    background: url(../images/icbc.png) no-repeat 25px 15px;
+}
+.pl60{
+    padding-left: 60px;
+}
+.num2{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.h42w130{
+    height: 42px;
+    width: 130px;
+}
+.red{
+    color: #FF2020;
+}
+.getyzm{
+    color: #fff;
+    background: #00B7EE;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+.w130{
+    width: 130px;
+}
+#charge{
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 34px;
+}
+.ryzm{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pb0{
+    padding-bottom: 0;
+}
+.real .cont .form table tr .feerate{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+.blue{
+    color: #0000fa
+}
+.pt5{
+    padding-top: 5px;
+}
+#txtx{
+    color: #fff;
+    background: #FF4431;
+    border: none;
+    width: 60px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    font-size:17px;
 }
 /**/
 
@@ -259,6 +376,64 @@ body {
     width: 300px;
     height: 38px;
 }
+.fpsw{
+    text-align: right;
+    vertical-align: top;
+}
+/**/
+.td3{
+    text-align: right;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+#idnum{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.h20{
+    height: 20px;
+}
+.paracont{
+    color: #fff;
+    background: #00B7EE;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+#psd{
+    text-align: right;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+.num3{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#psw,#cpsw{
+    width: 326px;
+    height: 30px;
+    margin-top: 20px;
+}
+.cpsw{
+    text-align: right;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+.ssubmit{
+    height: 30px;
+    background: #FF4431;
+    color: #fff;
+    border: none;
+    width: 100px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
 
 
 

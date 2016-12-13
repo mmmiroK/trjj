@@ -6,32 +6,32 @@
         <ng-form action="" name="safeform" >
             <table align="center">
                 <tr>
-                    <td style="text-align: right;vertical-align: bottom;padding-bottom: 10px">身份证号：</td>
-                    <td><input type="text" name="idnum" id="idnum" ng-model="user.idnum"  pattern="^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$" style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 0px;" required/></td>
+                    <td class="td3">身份证号：</td>
+                    <td><input type="text" name="idnum" id="idnum" ng-model="user.idnum"  pattern="^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$"  required/></td>
                 </tr>
                 <tr>
-                    <td style="height: 20px"></td>
-                    <td ng-class="alert"  ng-show="safeform.idnum.$error.pattern" style="height: 20px;color: #ff3434">*请填写15位到18位身份证格式</td>
+                    <td class="h20"></td>
+                    <td ng-class="alert"  ng-show="safeform.idnum.$error.pattern" class="h20 red">*请填写15位到18位身份证格式</td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">手机号码：</td>
+                    <td class="tright">手机号码：</td>
                     <td>{{identity | hidee}}</td>
-                    <td style="width: 130px;text-align: center"><a href='javascript:;' ng-click="clicktime()" ng-class="paraclass" style="color: #fff;background: #00B7EE;display: block;height: 36px;line-height: 36px;border-radius: 3px;">{{paracont}}</a>
+                    <td class="w130 tcenter"><a href='javascript:;' ng-click="clicktime()" ng-class="paraclass" class="paracont">{{paracont}}</a>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">验证码：</td>
-                    <td><input type="text" name="num" id="num" ng-model="user.num" style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"/></td>
+                    <td class="tright">验证码：</td>
+                    <td><input type="text" name="num" id="num" ng-model="user.num" class="num3"/></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right;vertical-align: bottom;padding-bottom: 10px" id="psd">交易密码：</td>
+                    <td id="psd">交易密码：</td>
                     <td>
-                        <input type="password" name="psw" id="psw" ng-model="user.psw"  ng-minlength="6" ng-maxlength="20"  placeholder="请输入密码..." required style="width: 326px;height: 30px;margin-top: 20px;"/>
+                        <input type="password" name="psw" id="psw" ng-model="user.psw"  ng-minlength="6" ng-maxlength="20"  placeholder="请输入密码..." required />
                     </td>
                 </tr>
                 <tr>
-                    <td style="height:20px"></td>
-                    <td style="height: 20px;color: #FF2020">
+                    <td class="h20"></td>
+                    <td class="h20 red">
                         <div class="alert" ng-show="safeform.psw.$invalid">
                             <p ng-show="safeform.psw.$error.minlength">*密码长度不小于6</p>
                             <p ng-show="safeform.psw.$error.maxlength">*密码长度不超过20</p>
@@ -39,20 +39,20 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: right;vertical-align: bottom;padding-bottom: 10px">确认交易密码：</td>
-                    <td><input type="password" id="cpsw" name="cpsw" ng-model="user.cpsw" placeholder="请再输一遍密码..." required style="width: 326px;height: 30px;margin-top: 20px;"/></td>
+                    <td class="cpsw">确认交易密码：</td>
+                    <td><input type="password" id="cpsw" name="cpsw" ng-model="user.cpsw" placeholder="请再输一遍密码..." required /></td>
                 </tr>
                 <tr>
-                    <td style="height:20px"></td>
-                    <td style="height: 20px">
+                    <td class="h20"></td>
+                    <td class="h20">
                         <div  class="alert" ng-show="safeform.psw.$valid">
-                            <p ng-show="user.cpsw!=user.psw" style="color: #FF2020;">*两次密码输入不一致</p>
+                            <p ng-show="user.cpsw!=user.psw" class="red">*两次密码输入不一致</p>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="width: 326px;height: 30px;text-align: center;"><input type="submit" value="下一步" ng-disabled="safeform.idnum.$invalid || safeform.psw.$invalid || user.psw != cpsw" style="height: 30px;background: #FF4431;color: #fff;border: none;width: 100px;display: inline-block;margin-top: 30px;"/>
+                    <td class="w326 h30 tcenter"><input type="submit" value="下一步" ng-disabled="safeform.idnum.$invalid || safeform.psw.$invalid || user.psw != cpsw" class="ssubmit"/>
                     </td>
                 </tr>
             </table>

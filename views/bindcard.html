@@ -16,18 +16,17 @@
                     <td>{{identity | hidee}}</td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">银行卡号：</td>
-                    <td><input type="text" name="num" id="num" ng-model="user.num" pattern="^(\d{16}|\d{19})$" style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"
-                               placeholder="请输入银行卡号" required/></td>
-                    <td style="height: 42px;width: 130px">
+                    <td  class="tright">银行卡号：</td>
+                    <td><input type="text" name="num" id="num" ng-model="user.num" pattern="^(\d{16}|\d{19})$"  placeholder="请输入银行卡号" required/></td>
+                    <td class="ngshow">
                         <span style="color: red" class="alert alert-danger" ng-show="bindcardform.num.$error.required">请输入卡号!</span>
                         <span style="color: red" class="alert alert-danger" ng-show="bindcardform.num.$error.pattern">请输入正确的卡号!</span>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">开户银行：</td>
+                    <td class="tright">开户银行：</td>
                     <td>
-                        <select name="" id="" style="width: 326px;height: 32px;">
+                        <select  class="bselect">
                             <option value="0">自动选择</option>
                             <option value="1">ICBC</option>
                             <option value="2">ABC</option>
@@ -36,14 +35,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">手机号码：</td>
-                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm"
-                               style="width: 326px;height: 30px;margin-top: 20px;margin-bottom: 20px;"/></td>
+                    <td class="tright">手机号码：</td>
+                    <td><input type="text" id="yzm" name="yzm" ng-model="user.yzm"/></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">地址：</td>
-                    <td style="width: 326px;text-align: center">
+                    <td  class="tright">地址：</td>
+                    <td  class="tcenter w326">
                         <select name="" class="link1">
                             <option value="0">请选择省份：</option>
                         </select>
@@ -54,8 +52,8 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="width: 326px;height: 30px;text-align: center;">
-                        <a href="" style="height: 30px;line-height: 30px;background: #FF4431;color: #fff;border: none;width: 100px;display: inline-block;margin-top: 30px;">下一步</a>
+                    <td  class="tcenter w326 h30">
+                        <a href="javascript:;" class="next-way">下一步</a>
                     </td>
                 </tr>
             </table>

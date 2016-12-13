@@ -3,41 +3,43 @@
         <p><span>我的钱包</span><span>></span><span>提现</span></p>
     </div>
     <div class="cont">
-        <form action="" name="realform">
+        <ng-form action="" name="realform" class="form">
             <table>
                 <tr>
-                    <td style="text-align: right">余额：</td>
+                    <td class="tright">余额：</td>
                     <td class="red">{{all|currency:'￥'}}</td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">银行卡：</td>
-                    <td><img src="images/card.png" alt=""  data-list="{{incountNum}}" id="incountNum"/></td>
+                    <td class="tright">银行卡：</td>
+                    <td><img src="images/card.png" data-list="{{incountNum}}" id="incountNum"/></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">提现金额：</td>
-                    <td><input type="text" name="real.num" id="realnum"/></td>
+                    <td class="tright">提现金额：</td>
+                    <td><input type="text" name="realnum" id="realnum" ng-model="realnum" pattern="^[1-9]\d{0,7}$" required/></td>
+                    <td class="alert" ng-show="realform.realnum.$error.pattern"><span class="red">请输入正确的金额!</span></td>
+                    <td class="alert" ng-show="realform.realnum.$error.required"><span class="red">请输入金额!</span></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">手续费：</td>
-                    <td><input type="text" value="{{fee}}" id="tipFee"/></td>
+                    <td class="tright">手续费：</td>
+                    <td><input type="text" value="{{fee}}" id="tipFee" disabled/></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right;padding-bottom: 0;">实际到账：</td>
-                    <td style="padding-bottom: 0px"><input type="text" name="real.arrived" id="realarrived"/></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td style="padding-top: 0px;padding-bottom: 10px;font-size: 12px;"><a href="" style="color: #0000fa">提现费率介绍</a></td>
-                </tr>
-                <tr>
-                    <td style="padding-top: 5px" style="text-align: right">交易密码：</td>
-                    <td style="padding-top: 5px"><input type="password" name="real.password" id="realpassword"/></td>
+                    <td class="tright pb0" >实际到账：</td>
+                    <td class="pb0"><input type="text" name="real.arrived" id="realarrived" disabled/></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="javascript:;"  style="color: #fff;background: #FF4431;border: none" id="txtx">提交</a></td>
+                    <td class="feerate"><a href="" class="blue">提现费率介绍</a></td>
+                </tr>
+                <tr>
+                    <td  class="tright pt5">交易密码：</td>
+                    <td class="pt5"><input type="password" name="real.password" id="realpassword"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center"><a href="javascript:;"  id="txtx">提交</a></td>
                 </tr>
             </table>
-        </form>
+        </ng-form>
     </div>
 </div>
